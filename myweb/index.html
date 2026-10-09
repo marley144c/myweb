@@ -1,0 +1,195 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+<meta charset="UTF-8"> 
+<meta name="viewport" content="width=device-width, initial
+scale=1.0"> 
+<title>My First Web Page</title>
+<link rel="stylesheet" href="css/styles.css"> 
+</head> 
+<body>
+     <header>
+        <h1>Welcome to the World of Web Programming</h1>
+<h2>Isaac Mvula 202507408</h2>    
+     </header>
+     <nav>
+        <a href="#about">About Me</a>
+        <a href="#hobbies">My Hobbies</a>
+        <a href="#photos">My Photos</a>
+        <a href="#media">My Media</a>
+        <a href="#learning-plan">My Learning Plan</a>
+          <a href="#projects">My Skills &amp; Project</a>
+     </nav>
+     <main>
+        <section id="about">
+            <h2>About Me</h2>
+            <p>My name is Isaac Mvula and I am a student currently studying ICT251 Web Technologies. I enjoy learning new skills in computer science, 
+    especially web design and Programming. Outside of school, I like gaming,exploring new places and reading in my free time 
+     and listening to music. My goal is to improve my web development skills so I can build 
+    creative websites and explore ethical hacking in the future.</p>
+        </section>
+
+        <section id="hobbies">
+            <h2>My Hobbies</h2>
+            <ul>
+                <li>Playing Games</li>
+                <li>Listening to Music</li>
+                <li>exploring</li>
+            </ul>
+        </section>
+        <section id="photos" style="margin: 60;">
+            <h2>My Photos</h2>
+            <img src="images/image1.jpg">
+            <img src="images/image2.jpg">
+            <img src="images/image3.jpg">
+            <p>That's me having a good time</p>
+        </section>
+
+        <section id="media" style="margin-top: 50;">
+            <h2>My Media</h2>
+            <video src="videos/video1.mp4" controls></video>
+            <p>My name isaac Mvula am a second year student at Mulungushi University studying Bachelor of science in Computer Science.ICt251 WebTechnology is a course under my program is interesting becaouse i get to learn new skills like web design and</p>
+            <h2>My Audio Introduction</h2>
+            <audio controls>
+                <source src="videos/audio1.aac">
+            </audio>
+        </section>
+
+
+     <div class="project-container">
+
+        <article class="project-card">
+            <h3>Project 1: HTML Webpage</h3>
+            <p>
+                I am learning how to structure webpages using HTML5,
+                headings, paragraphs, lists, links, and images.
+            </p>
+            <p><strong>Skill:</strong> HTML5</p>
+        </article>
+
+        <article class="project-card">
+            <h3>Project 2: CSS Website Styling</h3>
+            <p>
+                I am developing my ability to style webpages using
+                colours, spacing, typography, and layouts.
+            </p>
+            <p><strong>Skill:</strong> CSS</p>
+        </article>
+
+        <article class="project-card">
+            <h3>Project 3: Interactive Website</h3>
+            <p>
+                I am learning JavaScript to add interactive features
+                and improve the user experience of my website.
+            </p>
+            <p><strong>Skill:</strong> JavaScript</p>
+        </article>
+
+    </div>
+</section>
+
+        
+   <section id="contact">
+    <h2>Contact Me</h2>
+
+    <form id="contact-form">
+
+    <label for="name">Name:</label>
+    <input
+        type="text"
+        id="name"
+        name="name"
+        required
+    >
+
+    <label for="email">Email:</label>
+    <input
+        type="email"
+        id="email"
+        name="email"
+        required
+    >
+
+    <label for="topic">Topic:</label>
+    <input
+        type="text"
+        id="topic"
+        name="topic"
+    >
+
+    <label for="message">Message:</label>
+    <textarea
+        id="message"
+        name="message"
+        rows="5"
+        required
+    ></textarea>
+
+    <button type="submit">Preview Message</button>
+
+    <p id="form-feedback" role="status" aria-live="polite"></p>
+
+    <div id="form-preview" hidden>
+        <h3>Message Preview</h3>
+        <p><strong>Name:</strong> <span id="preview-name"></span></p>
+        <p><strong>Email:</strong> <span id="preview-email"></span></p>
+        <p><strong>Message:</strong> <span id="preview-message"></span></p>
+    </div>
+
+    <p><small>Browser demonstration only — no message is sent.</small></p>
+
+    </form>
+
+</section>
+
+        <section id="learning-plan">
+  <h2>My Learning Plan</h2>
+  <ol>
+    <li>Practice HTML and CSS by creating at least one mini project each week.</li>
+    <li>Watch tutorials and follow what the lecture for Webtechnology teaches durint WebTech class to improve my web development skills.</li>
+    <li>Get feedback from classmates and the lecture for WebTechnology to make my websites better.</li>
+  </ol>
+</section>
+
+ <table id="learning-table">
+    <caption>My Weekly Web Learning Plan</caption>
+
+    <thead>
+        <tr>
+            <th scope="col">Day</th>
+            <th scope="col">Topic</th>
+            <th scope="col">Practice Task</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Monday</td>
+            <td>HTML</td>
+            <td>Practise creating webpages.</td>
+        </tr>
+
+        <tr>
+            <td>Wednesday</td>
+            <td>CSS</td>
+            <td>Practise styling a webpage.</td>
+        </tr>
+
+        <tr>
+            <td>Friday</td>
+            <td>Web Design</td>
+            <td>Build and test a small webpage.</td>
+        </tr>
+    </tbody>
+</table>
+</section>
+
+
+
+     </main>
+       <footer class="site-footer">
+        <p>copy; 2026 Isaac Mvula. Student Portfolio</p>
+        <p>Built as part of ICT251 Web Technologies.</p>
+            <a href="https://github.com/marley144c/myweb.git">View Source on GitHub</a>
+</body> 
+</html>

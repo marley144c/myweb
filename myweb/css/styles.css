@@ -1,0 +1,553 @@
+  img {
+        width: 100px;
+        border-radius: 10%;
+        margin-right: 50px;
+      }
+
+      .username {
+        font-weight: bold;
+      }
+      #media {
+        clear:both;
+        margin: top 40px;
+      }
+      
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    background-color: #f4f6f8;
+    color: #333;
+}
+
+
+/* ===== HEADER ===== */
+
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 30px;
+}
+
+h1 {
+    font-size: 2.2rem;
+}
+
+
+/* ===== NAVIGATION ===== */
+
+nav {
+    background-color: #222;
+    text-align: center;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+    padding: 8px;
+}
+
+nav a:hover,
+nav a:focus {
+    text-decoration: underline;
+}
+
+
+/* ===== MAIN CONTENT ===== */
+
+main {
+    max-width: 1000px;
+    margin: auto;
+    padding: 20px;
+}
+
+
+/* ===== SECTIONS ===== */
+
+.content-section {
+    background-color: white;
+    margin-bottom: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+}
+
+
+/* ===== SECTION HEADINGS ===== */
+
+h2 {
+    color: #333;
+    border-bottom: 2px solid #333;
+    padding-bottom: 5px;
+}
+
+
+/* ===== PHOTOS ===== */
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.photo-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.photo-gallery figure {
+    margin: 0;
+    flex: 1 1 250px;
+}
+
+.photo-gallery img {
+    width: 100%;
+    border-radius: 8px;
+}
+
+
+/* ===== VIDEO AND AUDIO ===== */
+
+video {
+    max-width: 100%;
+    height: auto;
+}
+
+audio {
+    max-width: 100%;
+}
+
+
+/* ===== TABLE ===== */
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid #333;
+}
+
+caption {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #aaa;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+
+/* ===== CONTACT FORM ===== */
+
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover,
+button:focus {
+    opacity: 0.8;
+}
+
+
+/* ===== UNIQUE SECTION ===== */
+
+#contact {
+    background-color: #eef5ff;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    background-color: white;
+    border: 2px solid #333;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+caption {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+th,
+td {
+    border: 1px solid #aaa;
+    padding: 12px;
+    text-align: left;
+}
+
+th {
+    background-color: #333;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+}
+
+video {
+    width: 100%;       /* Makes it scale to fit the screen/container width */
+    height: auto;      /* Keeps the original video proportions so it doesn't look stretched */
+    max-width: 300px;  /* Optional: Prevents it from getting too huge on desktop screens */
+}
+
+/* =================================
+   1. GLOBAL STYLES
+================================= */
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f6fc;
+    color: #243047;
+    line-height: 1.7;
+}
+
+
+/* =================================
+   2. HEADER
+================================= */
+
+.site-header {
+    background: linear-gradient(135deg, #101c3a, #233f70);
+    color: #ffffff;
+    text-align: center;
+    padding: 65px 20px;
+}
+
+.site-header h1 {
+    font-size: clamp(2rem, 5vw, 3.2rem);
+    margin-bottom: 10px;
+}
+
+.student-name {
+    color: #f2c14e;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+
+/* =================================
+   3. NAVIGATION
+================================= */
+
+nav {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    background-color: #ffffff;
+    padding: 18px;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.08);
+}
+
+nav a {
+    color: #17315d;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 14px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a:focus-visible {
+    background-color: #17315d;
+    color: #ffffff;
+}
+
+
+/* =================================
+   4. MAIN CONTENT
+================================= */
+
+main {
+    width: min(1100px, 92%);
+    margin: 35px auto;
+}
+
+section {
+    background-color: #ffffff;
+    margin-bottom: 30px;
+    padding: 30px;
+    border-radius: 14px;
+    box-shadow: 0 5px 18px rgba(22, 40, 75, 0.07);
+    scroll-margin-top: 20px;
+}
+
+section h2 {
+    color: #17315d;
+    font-size: 1.8rem;
+    border-bottom: 3px solid #f2c14e;
+    padding-bottom: 10px;
+    margin-top: 0;
+}
+
+section h3 {
+    color: #233f70;
+}
+
+
+/* =================================
+   5. HOBBIES
+================================= */
+
+#hobbies ul {
+    padding-left: 25px;
+}
+
+#hobbies li {
+    margin-bottom: 10px;
+}
+
+
+/* =================================
+   6. PHOTO GALLERY
+================================= */
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+        minmax(220px, 1fr)
+        gap: 20px;
+        align-items: :start
+}
+
+.gallery figure {
+    margin: 0;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: o 4px 12px rgba(0, 0, 0, 0.12);
+}
+
+.gallery img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    display: block;
+}
+
+.gallery figcaption {
+    padding: 12px;
+    text-align: center;
+    font-weight: bold;
+    color: #17315d;
+    font-size: 14px;
+}
+
+
+/* =================================
+   7. MEDIA
+================================= */
+
+.media-item {
+    margin-bottom: 30px;
+}
+
+.media-item video {
+    display: block;
+    width: 100%;
+    max-width: 650px;
+    height: auto;
+    margin: 15px auto;
+    border-radius: 12px;
+    background-color: #101c3a;
+}
+
+.media-item audio {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    margin: 15px 0;
+}
+
+
+/* =================================
+   8. LEARNING TABLE
+================================= */
+
+#learning-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+#learning-table caption {
+    font-weight: bold;
+    font-size: 1.1rem;
+    padding: 12px;
+    color: #17315d;
+}
+
+#learning-table th,
+#learning-table td {
+    padding: 14px;
+    text-align: left;
+    border: 1px solid #d9e0ed;
+}
+
+#learning-table th {
+    background-color: #17315d;
+    color: #ffffff;
+}
+
+#learning-table tbody tr:nth-child(even) {
+    background-color: #f3f6fc;
+}
+
+
+/* =================================
+   9. PROJECT CARDS
+================================= */
+
+.project-container {
+    display: grid;
+    grid-template-columns: repeat(
+        auto-fit,
+        minmax(220px, 1fr)
+    );
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #f3f6fc;
+    border-left: 5px solid #f2c14e;
+    padding: 22px;
+    border-radius: 10px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(22, 40, 75, 0.12);
+}
+
+
+/* =================================
+   10. CONTACT FORM
+================================= */
+
+#contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-top: 18px;
+}
+
+#contact-form input,
+#contact-form textarea {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    margin-top: 6px;
+    border: 1px solid #c8d2e3;
+    border-radius: 7px;
+    font: inherit;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+    outline: 2px solid #557fc2;
+    border-color: #17315d;
+}
+
+#contact-form button {
+    margin-top: 20px;
+    padding: 12px 22px;
+    background-color: #17315d;
+    color: #ffffff;
+    border: none;
+    border-radius: 7px;
+    font-size: 1rem;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+#contact-form button:hover {
+    background-color: #294d84;
+}
+
+#form-feedback {
+    font-weight: bold;
+}
+
+#form-preview {
+    margin-top: 20px;
+    padding: 20px;
+    background-color: #f3f6fc;
+    border-left: 5px solid #f2c14e;
+    border-radius: 8px;
+    overflow-wrap: anywhere;
+}
+
+
+/* =================================
+   11. FOOTER
+================
+
+@media (max-width: 650px) {
+    .gallery {
+         grid-template: 1fr;
+}
+         .gallery img {
+         height: 250px;
+}
+}
